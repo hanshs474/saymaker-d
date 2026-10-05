@@ -1,0 +1,13 @@
+{
+  "name": "saymaker",
+  "description": "Generate images and video from D on SayMaker: Veo 3.1, Kling 3.0, Seedance 2.0, Nano Banana 2 and more with one API key.",
+  "homepage": "https://saymaker.ai/?utm_source=dub&utm_medium=package",
+  "authors": ["SayMaker"],
+  "copyright": "Copyright (c) 2026 SayMaker",
+  "license": "MIT",
+  "targetType": "library",
+  "configurations": [
+    { "name": "library", "targetType": "library", "excludedSourceFiles": ["source/app.d"] },
+    { "name": "cli", "targetType": "executable", "targetName": "saymaker", "mainSourceFile": "source/app.d" }
+  ]
+}
